@@ -1,13 +1,12 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import kotlin.jvm.internal.Intrinsics.Kotlin
 
 plugins {
 	kotlin("jvm") version "1.6.0"
-	kotlin("plugin.spring") version "1.6.10" apply false
-	kotlin("plugin.jpa") version "1.6.0" apply false
+	kotlin("plugin.spring") version "1.6.0"
+	kotlin("plugin.jpa") version "1.6.0"
 
-	id("org.springframework.boot") version "2.6.3" apply false
-	id("io.spring.dependency-management") version "1.0.11.RELEASE" apply false
+	id("org.springframework.boot") version "2.7.3"
+	id("io.spring.dependency-management") version "1.0.11.RELEASE"
 }
 
 repositories {
@@ -40,9 +39,9 @@ subprojects {
 	}
 
 	dependencies {
-		implementation("org.springframework.boot:spring-boot-starter")
-		implementation("org.jetbrains.kotlin:kotlin-reflect")
-		implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-		testImplementation("org.springframework.boot:spring-boot-starter-test")
+		implementation("org.springframework.boot:spring-boot-starter:2.6.3")
+		implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.0")
+		implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0")
+		testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.3")
 	}
 }
