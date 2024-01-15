@@ -43,5 +43,9 @@ subprojects {
 		implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.0")
 		implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0")
 		testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.3")
+		implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.6")
+		runtimeOnly("mysql:mysql-connector-java:8.0.32")
+		implementation("org.springframework.boot:spring-boot-starter-data-redis:2.7.18")
+
 	}
 }
