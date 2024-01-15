@@ -16,5 +16,5 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.6")
     runtimeOnly("mysql:mysql-connector-java:8.0.32")
-    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis:2.7.18")
 }
